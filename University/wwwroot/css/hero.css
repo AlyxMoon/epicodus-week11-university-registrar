@@ -1,7 +1,14 @@
 header {
   width: 100%;
   height: 600px;
+}
 
+body:not(.controller-Home) header {
+  height: 200px;
+}
+
+body:not(.controller-Home) .hero-content-wrapper {
+  display: none;
 }
 
 header .hero-wrapper {
