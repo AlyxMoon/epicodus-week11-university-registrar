@@ -28,7 +28,7 @@ namespace University.Controllers
       return RedirectToAction("Index");
     }
 
-    [HttpGet("/{courseId}")]
+    [HttpGet("{courseId}")]
     public ActionResult Details (int courseId)
     {
       Course item = _db.Courses.FirstOrDefault(item => item.Id == courseId);
@@ -36,7 +36,7 @@ namespace University.Controllers
       return View(item);
     }
 
-    [HttpGet("/{courseId}/remove")]
+    [HttpGet("{courseId}/remove")]
     public ActionResult Remove (int courseId)
     {
       Course item = _db.Courses.FirstOrDefault(item => item.Id == courseId);
