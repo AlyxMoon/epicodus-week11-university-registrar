@@ -1,0 +1,12 @@
+@using System.Collections.Generic
+@using University.Models
+
+@model List<Course>
+@{
+  Layout = "_Layout";
+}
+
+<h1>Course Listings</h1>
+
+<partial name="_FormCreate" model="new Course()" />
+<partial name="_TableCourses" model="Model" />
