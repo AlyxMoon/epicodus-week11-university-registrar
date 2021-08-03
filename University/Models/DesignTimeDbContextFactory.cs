@@ -5,7 +5,7 @@ using System.IO;
 
 namespace University.Models
 {
-  public class ToDoListContextFactory : IDesignTimeDbContextFactory<DatabaseContext>
+  public class DatabaseContextFactory : IDesignTimeDbContextFactory<DatabaseContext>
   {
     DatabaseContext IDesignTimeDbContextFactory<DatabaseContext>.CreateDbContext(string[] args)
     {
